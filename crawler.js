@@ -46,10 +46,10 @@ var extractNodes = function(node, level){
         // build hierarchical node name dependent on level and remove dots
         if (level === 1){
           _nodeName = "wiki." + node.toString().split('.').join('');
-          _importsItem = "wiki." + rootNode + "." + title.split('.').join('');
+          _importsItem = "wiki." + title.split('.').join('');
         }else{
-          _nodeName = "wiki." + rootNode + "." + node.toString().split('.').join('');
-          _importsItem = "wiki." + rootNode + "." + node[i].split('.').join('') + "." + title.split('.').join('');
+          _nodeName = "wiki." + node.toString().split('.').join('');
+          _importsItem = "wiki." + title.split('.').join('');
           
           // create nodes for import items
           nodes.push({name: _importsItem, imports: [], size: 0});
