@@ -16,15 +16,15 @@ var extractNodes = function(name){
   // loop over given array
   for(var i=0;i<name.length; i++){
     
-    console.log(name[i]);
+    console.log("creating node: " + name[i]);
     
     if(name[i]){
       // replace content on page with new content from target node
       $("#mw-content-text").load(name[i].split(' ').join('_')+" #mw-content-text");
     }else{
       // job finished if there are no more nodes
-      console.log("finished");
-      console.log(Object.keys(nodes).length + " nodes on first level");
+      console.log("process finished");
+      console.log("result:" + Object.keys(nodes).length + " nodes on first level");
       return;
     }
     
@@ -46,9 +46,12 @@ var extractNodes = function(name){
 }
 
 // Start
+console.log("starting at root node: " + rootNode)
 extractNodes([rootNode]);
+
 
 // Show results as JSON-String
   $("#firstHeading span").text("Result");
   nodeData = JSON.stringify(nodes);
   $("#mw-content-text").html(nodeData);
+  console.log(nodes);
