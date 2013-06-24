@@ -11,10 +11,6 @@ $.ajaxSetup({async:false});
  
 // get all nodes of article
 var extractNodes = function(node, level){  
-  
-  // create "name" property of object
-  //_nodeName = "root." + node.toString();
-  //_nodeName = {name: _nodeName};
 
   // create temp lists for later use
   _nodeList = [];
@@ -47,18 +43,20 @@ var extractNodes = function(node, level){
         if (level === 1){
           _nodeName = "wiki." + node.toString().split('.').join('');
           _importsItem = "wiki." + title.split('.').join('');
+          _importsList.push(_importsItem);
         }else{
           _nodeName = "wiki." + node.toString().split('.').join('');
           _importsItem = "wiki." + title.split('.').join('');
           
-          // create nodes for import items
-          nodes.push({name: _importsItem, imports: [], size: 0});
+          if(nodes[0].imports.indexOf(_importsItem) === 0){
+            _importsList.push(_importsItem);
+          }
+         
         }
         console.log("path: " + _importsItem);
 
         _nodeName = {name: _nodeName};
 
-        _importsList.push(_importsItem);
         _nodeList.push(title);
 
       }
@@ -85,10 +83,9 @@ extractNodes([rootNode], 1);
 // loop over level 2
 for(var i in nodes[0]._nodes){
   _tempNode = nodes[0]._nodes[i]
+  //nodes.push({name: _tempNode, imports: [], size: 0});
   extractNodes([_tempNode], 2);
 }
-// flat loop over level 3
-
 
 
 // Show results as JSON-String
