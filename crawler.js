@@ -1,7 +1,7 @@
 // copy/paste into web developer console on any wikipedia article
 
-var nodes = {};
-var nodeNr = 0;
+// global array of all objects
+var nodes = [];
 
 // get root node from page heading
 var rootNode = $("#firstHeading span").text();
@@ -10,17 +10,24 @@ var rootNode = $("#firstHeading span").text();
 $.ajaxSetup({async:false});
  
 // get all nodes of article
-var extractNodes = function(name){        
-  nodes[name] = [];
+var extractNodes = function(node){  
+  
+  // create "name" property of object
+  _nodeName = node.toString();
+  _nodeName = {name: _nodeName};
+
+  // create temp list for later use
+  _nodeList = [];
 
   // loop over given array
-  for(var i=0;i<name.length; i++){
+    for(var i in node){
     
-    console.log("creating node: " + name[i]);
+    console.log("output i: " + i);
+    console.log("creating node: " + node[i]);
     
-    if(name[i]){
+    if(node[i]){
       // replace content on page with new content from target node
-      $("#mw-content-text").load(name[i].split(' ').join('_')+" #mw-content-text");
+      $("#mw-content-text").load(node[i].split(' ').join('_')+" #mw-content-text");
     }else{
       // job finished if there are no more nodes
       console.log("process finished");
@@ -35,20 +42,26 @@ var extractNodes = function(name){
 
       // filter out internal wikipedia links
       if (title && link.indexOf(":") === -1) {
-        nodes[name].push(title);
+        _nodeList.push(title);
       }
     }); 
-  };
 
-  nodeNr++;
-  var label = nodes[rootNode][nodeNr];
-  extractNodes([label]);
+    // create "imports" property of object and push temp list to it
+    _nodeName["imports"] = _nodeList;
+    // push object to global array
+    nodes.push(_nodeName);
+  };
 }
 
 // Start
 console.log("starting at root node: " + rootNode)
+// start with root node
 extractNodes([rootNode]);
-
+// loop over level 1
+for(var i in nodes[0].imports){
+  _tempNode = nodes[0].imports[i]
+  extractNodes([_tempNode]);
+}
 
 // Show results as JSON-String
   $("#firstHeading span").text("Result");
