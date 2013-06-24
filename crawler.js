@@ -10,19 +10,19 @@ var rootNode = $("#firstHeading span").text();
 $.ajaxSetup({async:false});
  
 // get all nodes of article
-var extractNodes = function(node){  
+var extractNodes = function(node, level){  
   
   // create "name" property of object
   _nodeName = node.toString();
   _nodeName = {name: _nodeName};
 
-  // create temp list for later use
+  // create temp lists for later use
   _nodeList = [];
+  _importsList = [];
 
   // loop over given array
     for(var i in node){
     
-    console.log("output i: " + i);
     console.log("creating node: " + node[i]);
     
     if(node[i]){
@@ -42,12 +42,29 @@ var extractNodes = function(node){
 
       // filter out internal wikipedia links
       if (title && link.indexOf(":") === -1) {
+
+        // build hierarchical node name dependent on level and remove dots
+        if (level === 1){
+          _importsItem = rootNode + "." + title.split('.').join('');
+        }else{
+          _importsItem = rootNode + "." + node[i].split('.').join('') + "." + title.split('.').join('');
+        }
+        console.log("path: " + _importsItem);
+        _importsList.push(_importsItem);
         _nodeList.push(title);
+
       }
     }); 
 
+    // create "nodes" property of object and push temp list to it
+    _nodeName["nodes"] = _nodeList;
+
     // create "imports" property of object and push temp list to it
-    _nodeName["imports"] = _nodeList;
+    _nodeName["imports"] = _importsList;
+
+    // create "size" property of object
+    _nodeSize = _nodeName["nodes"].length;
+    _nodeName["size"] = _nodeSize;
     // push object to global array
     nodes.push(_nodeName);
   };
@@ -56,11 +73,11 @@ var extractNodes = function(node){
 // Start
 console.log("starting at root node: " + rootNode)
 // start with root node
-extractNodes([rootNode]);
+extractNodes([rootNode], 1);
 // loop over level 1
-for(var i in nodes[0].imports){
-  _tempNode = nodes[0].imports[i]
-  extractNodes([_tempNode]);
+for(var i in nodes[0].nodes){
+  _tempNode = nodes[0].nodes[i]
+  extractNodes([_tempNode], 2);
 }
 
 // Show results as JSON-String
