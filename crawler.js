@@ -13,8 +13,8 @@ $.ajaxSetup({async:false});
 var extractNodes = function(node, level){  
   
   // create "name" property of object
-  _nodeName = node.toString();
-  _nodeName = {name: _nodeName};
+  //_nodeName = "root." + node.toString();
+  //_nodeName = {name: _nodeName};
 
   // create temp lists for later use
   _nodeList = [];
@@ -45,11 +45,19 @@ var extractNodes = function(node, level){
 
         // build hierarchical node name dependent on level and remove dots
         if (level === 1){
-          _importsItem = rootNode + "." + title.split('.').join('');
+          _nodeName = "wiki." + node.toString().split('.').join('');
+          _importsItem = "wiki." + rootNode + "." + title.split('.').join('');
         }else{
-          _importsItem = rootNode + "." + node[i].split('.').join('') + "." + title.split('.').join('');
+          _nodeName = "wiki." + rootNode + "." + node.toString().split('.').join('');
+          _importsItem = "wiki." + rootNode + "." + node[i].split('.').join('') + "." + title.split('.').join('');
+          
+          // create nodes for import items
+          nodes.push({name: _importsItem, imports: [], size: 0});
         }
         console.log("path: " + _importsItem);
+
+        _nodeName = {name: _nodeName};
+
         _importsList.push(_importsItem);
         _nodeList.push(title);
 
@@ -57,13 +65,13 @@ var extractNodes = function(node, level){
     }); 
 
     // create "nodes" property of object and push temp list to it
-    _nodeName["nodes"] = _nodeList;
+    _nodeName["_nodes"] = _nodeList;
 
     // create "imports" property of object and push temp list to it
     _nodeName["imports"] = _importsList;
 
     // create "size" property of object
-    _nodeSize = _nodeName["nodes"].length;
+    _nodeSize = _nodeName["_nodes"].length;
     _nodeName["size"] = _nodeSize;
     // push object to global array
     nodes.push(_nodeName);
@@ -72,13 +80,16 @@ var extractNodes = function(node, level){
 
 // Start
 console.log("starting at root node: " + rootNode)
-// start with root node
+// start with root node on level 1
 extractNodes([rootNode], 1);
-// loop over level 1
-for(var i in nodes[0].nodes){
-  _tempNode = nodes[0].nodes[i]
+// loop over level 2
+for(var i in nodes[0]._nodes){
+  _tempNode = nodes[0]._nodes[i]
   extractNodes([_tempNode], 2);
 }
+// flat loop over level 3
+
+
 
 // Show results as JSON-String
   $("#firstHeading span").text("Result");
