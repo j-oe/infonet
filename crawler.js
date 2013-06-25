@@ -19,7 +19,7 @@ var extractNodes = function(node, level){
   // loop over given array
     for(var i in node){
     
-    console.log("creating node: " + node[i]);
+    console.log("creating node on level 2: " + node[i]);
     
     if(node[i]){
       // replace content on page with new content from target node
@@ -48,15 +48,18 @@ var extractNodes = function(node, level){
           _nodeName = "wiki." + node.toString().split('.').join('');
           _importsItem = "wiki." + title.split('.').join('');
           
-          if(!(nodes[0].imports.indexOf(_importsItem) === -1)){
+          // test for common nodes with root nodes and duplicates. then push to imports list
+          if(!(nodes[0].imports.indexOf(_importsItem) === -1) && _importsList.indexOf(_importsItem) === -1){
             _importsList.push(_importsItem);
           }
          
         }
-        console.log("path: " + _importsItem);
+        console.log("creating node on level 3: " + _importsItem);
 
+        // create "name" property of object
         _nodeName = {name: _nodeName};
 
+        // push title of node to temp list
         _nodeList.push(title);
 
       }
@@ -71,13 +74,15 @@ var extractNodes = function(node, level){
     // create "size" property of object
     _nodeSize = _nodeName["_nodes"].length;
     _nodeName["size"] = _nodeSize;
+    
     // push object to global array
     nodes.push(_nodeName);
   };
 }
 
-// Start
-console.log("starting at root node: " + rootNode)
+// start
+console.log("creating node on level 1: " + rootNode)
+var startTime = new Date().getTime();
 // start with root node on level 1
 extractNodes([rootNode], 1);
 // loop over level 2
@@ -87,9 +92,28 @@ for(var i in nodes[0]._nodes){
   extractNodes([_tempNode], 2);
 }
 
+// clean Data for visualization
+console.log("cleaning data");
+// delete internal processing nodes
+for (var k in nodes){
+    delete nodes[k]._nodes;
+}
+// send root node to nirvana
+var nirvana = nodes.splice(0,1);
 
-// Show results as JSON-String
-  $("#firstHeading span").text("Result");
-  nodeData = JSON.stringify(nodes);
-  $("#mw-content-text").html(nodeData);
-  console.log(nodes);
+// show results as JSON-String
+$("#firstHeading span").text("Result");
+nodeData = JSON.stringify(nodes, null, '\t');
+$("#mw-content-text").html("<textarea rows='100'>" + nodeData + "</textarea>");
+ 
+// statistics  
+var endTime = new Date().getTime();
+var totalNodes = 0;
+
+for(var i in nodes){totalNodes = totalNodes + nodes[i].size}
+
+//console.log(nodeData);
+//console.log(nodes);
+
+console.log("process finished in",(endTime - startTime)/1000,"seconds.");
+console.log("analyzed a total of",totalNodes,"nodes.");
