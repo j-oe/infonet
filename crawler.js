@@ -18,20 +18,14 @@ var extractNodes = function(node, level){
 
   // loop over given array
     for(var i in node){
-    
-    console.log("creating node on level 2: " + node[i]);
-    
+      
     if(node[i]){
+      console.log("creating node on level 2: " + node[i]);
       // replace content on page with new content from target node
       $("#mw-content-text").load(node[i].split(' ').join('_')+" #mw-content-text");
-    }else{
-      // job finished if there are no more nodes
-      console.log("process finished");
-      console.log("result:" + Object.keys(nodes).length + " nodes on first level");
-      return;
     }
     
-    // extract all links from new content
+    // extract all article links from new content
     $("#mw-content-text a[href^='/wiki']").each(function(){
       title = $(this).attr("title");
       link = $(this).attr("href");
@@ -39,16 +33,15 @@ var extractNodes = function(node, level){
       // filter out internal wikipedia links
       if (title && link.indexOf(":") === -1) {
 
-        // build hierarchical node name dependent on level and remove dots
+        // build node name and remove dots
+        _nodeName = "wiki." + node.toString().split('.').join('');
+        _importsItem = "wiki." + title.split('.').join('');
+
+        // handle import nodes dependend on level
         if (level === 1){
-          _nodeName = "wiki." + node.toString().split('.').join('');
-          _importsItem = "wiki." + title.split('.').join('');
           _importsList.push(_importsItem);
         }else{
-          _nodeName = "wiki." + node.toString().split('.').join('');
-          _importsItem = "wiki." + title.split('.').join('');
-          
-          // test for common nodes with root nodes and duplicates. then push to imports list
+          // test for common nodes with root node and duplicates. then push to imports list
           if(!(nodes[0].imports.indexOf(_importsItem) === -1) && _importsList.indexOf(_importsItem) === -1){
             _importsList.push(_importsItem);
           }
@@ -83,12 +76,13 @@ var extractNodes = function(node, level){
 // start
 console.log("creating node on level 1: " + rootNode)
 var startTime = new Date().getTime();
+
 // start with root node on level 1
 extractNodes([rootNode], 1);
+
 // loop over level 2
 for(var i in nodes[0]._nodes){
-  _tempNode = nodes[0]._nodes[i]
-  //nodes.push({name: _tempNode, imports: [], size: 0});
+  _tempNode = nodes[0]._nodes[i];
   extractNodes([_tempNode], 2);
 }
 
@@ -110,7 +104,9 @@ $("#mw-content-text").html("<textarea rows='100'>" + nodeData + "</textarea>");
 var endTime = new Date().getTime();
 var totalNodes = 0;
 
-for(var i in nodes){totalNodes = totalNodes + nodes[i].size}
+for(var i in nodes){
+  totalNodes = totalNodes + nodes[i].size;
+}
 
 //console.log(nodeData);
 //console.log(nodes);
