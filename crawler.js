@@ -48,7 +48,7 @@ var extractNodes = function(node, level){
           _nodeName = "wiki." + node.toString().split('.').join('');
           _importsItem = "wiki." + title.split('.').join('');
           
-          if(nodes[0].imports.indexOf(_importsItem) === 0){
+          if(!(nodes[0].imports.indexOf(_importsItem) === -1)){
             _importsList.push(_importsItem);
           }
          
