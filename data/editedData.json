@@ -1,0 +1,2324 @@
+[
+  {
+    "name": "wiki.Vertraulichkeit",
+    "imports": [
+      "wiki.Verschlüsselung",
+      "wiki.Datenschutz"
+    ],
+    "size": 23
+  },
+  {
+    "name": "wiki.Verfügbarkeit",
+    "imports": [],
+    "size": 19
+  },
+  {
+    "name": "wiki.Integrität (Informationssicherheit)",
+    "imports": [
+      "wiki.Verfügbarkeit",
+      "wiki.Vertraulichkeit",
+      "wiki.BSI",
+      "wiki.Authentizität"
+    ],
+    "size": 13
+  },
+  {
+    "name": "wiki.Gefahr",
+    "imports": [
+      "wiki.Risiko",
+      "wiki.Bedrohung",
+      "wiki.Risikomanagement",
+      "wiki.Sicherheit"
+    ],
+    "size": 99
+  },
+  {
+    "name": "wiki.Bedrohung",
+    "imports": [],
+    "size": 23
+  },
+  {
+    "name": "wiki.Risiko",
+    "imports": [
+      "wiki.Gefahr",
+      "wiki.Sicherheit",
+      "wiki.Risikomanagement"
+    ],
+    "size": 110
+  },
+  {
+    "name": "wiki.Common Criteria",
+    "imports": [
+      "wiki.Zertifizierung",
+      "wiki.Datenschutz",
+      "wiki.BSI",
+      "wiki.IT-Sicherheitsverfahren",
+      "wiki.Kryptographie",
+      "wiki.Schnittstelle",
+      "wiki.Firewall",
+      "wiki.ITSEC",
+      "wiki.Orange Book"
+    ],
+    "size": 48
+  },
+  {
+    "name": "wiki.IT-Sicherheitsverfahren",
+    "imports": [
+      "wiki.Normung",
+      "wiki.Information Security Management System",
+      "wiki.Kryptographie",
+      "wiki.Datenschutz",
+      "wiki.Common Criteria"
+    ],
+    "size": 36
+  },
+  {
+    "name": "wiki.Informationstechnik",
+    "imports": [
+      "wiki.Software",
+      "wiki.Computer",
+      "wiki.Rechnernetz",
+      "wiki.IuK-Technik"
+    ],
+    "size": 56
+  },
+  {
+    "name": "wiki.Datenschutz",
+    "imports": [
+      "wiki.Informationelle Selbstbestimmung",
+      "wiki.Bundesdatenschutzgesetz",
+      "wiki.Volkszählungsurteil",
+      "wiki.Internet",
+      "wiki.E-Mail"
+    ],
+    "size": 190
+  },
+  {
+    "name": "wiki.Informationelle Selbstbestimmung",
+    "imports": [
+      "wiki.Datenschutz",
+      "wiki.Volkszählungsurteil",
+      "wiki.Anonymität",
+      "wiki.Bundesdatenschutzgesetz",
+      "wiki.Ausspähen von Daten"
+    ],
+    "size": 66
+  },
+  {
+    "name": "wiki.Volkszählungsurteil",
+    "imports": [
+      "wiki.Informationelle Selbstbestimmung",
+      "wiki.Datenschutz",
+      "wiki.Bundesdatenschutzgesetz"
+    ],
+    "size": 36
+  },
+  {
+    "name": "wiki.Anonymität",
+    "imports": [
+      "wiki.Internetsurfen"
+    ],
+    "size": 27
+  },
+  {
+    "name": "wiki.Bundesdatenschutzgesetz",
+    "imports": [
+      "wiki.Datenschutz",
+      "wiki.Volkszählungsurteil",
+      "wiki.E-Mail",
+      "wiki.Internetsurfen"
+    ],
+    "size": 62
+  },
+  {
+    "name": "wiki.Vertraulichkeit",
+    "imports": [
+      "wiki.Verschlüsselung",
+      "wiki.Datenschutz"
+    ],
+    "size": 23
+  },
+  {
+    "name": "wiki.Datenübertragung",
+    "imports": [
+      "wiki.Computer",
+      "wiki.Bundesdatenschutzgesetz"
+    ],
+    "size": 47
+  },
+  {
+    "name": "wiki.Integrität (Informationssicherheit)",
+    "imports": [
+      "wiki.Verfügbarkeit",
+      "wiki.Vertraulichkeit",
+      "wiki.BSI",
+      "wiki.Authentizität"
+    ],
+    "size": 13
+  },
+  {
+    "name": "wiki.Verfügbarkeit",
+    "imports": [],
+    "size": 19
+  },
+  {
+    "name": "wiki.Authentizität",
+    "imports": [
+      "wiki.IETF"
+    ],
+    "size": 97
+  },
+  {
+    "name": "wiki.Elektronische Signatur",
+    "imports": [
+      "wiki.Elektronische Signatur",
+      "wiki.Kryptographie",
+      "wiki.Pretty Good Privacy",
+      "wiki.BSI",
+      "wiki.Integrität (Informationssicherheit)"
+    ],
+    "size": 85
+  },
+  {
+    "name": "wiki.Anonymität",
+    "imports": [
+      "wiki.Internetsurfen"
+    ],
+    "size": 27
+  },
+  {
+    "name": "wiki.Sicherheit",
+    "imports": [
+      "wiki.Risiko",
+      "wiki.Gefahr",
+      "wiki.Sicherheitskonzept",
+      "wiki.Netzwerksicherheit"
+    ],
+    "size": 92
+  },
+  {
+    "name": "wiki.IuK-Technik",
+    "imports": [
+      "wiki.Informationstechnik",
+      "wiki.Software",
+      "wiki.Computer",
+      "wiki.Rechnernetz"
+    ],
+    "size": 38
+  },
+  {
+    "name": "wiki.Computer",
+    "imports": [
+      "wiki.Personal Computer",
+      "wiki.Software",
+      "wiki.Computerprogramm",
+      "wiki.Betriebssystem",
+      "wiki.Internet"
+    ],
+    "size": 510
+  },
+  {
+    "name": "wiki.Datenschutz",
+    "imports": [
+      "wiki.Informationelle Selbstbestimmung",
+      "wiki.Bundesdatenschutzgesetz",
+      "wiki.Volkszählungsurteil",
+      "wiki.Internet",
+      "wiki.E-Mail"
+    ],
+    "size": 190
+  },
+  {
+    "name": "wiki.Netzwerksicherheit",
+    "imports": [
+      "wiki.Firewall",
+      "wiki.Technische Kompromittierung",
+      "wiki.Datensicherung",
+      "wiki.Open Source",
+      "wiki.Internet",
+      "wiki.Pufferüberlauf",
+      "wiki.Denial of Service",
+      "wiki.Spoofing",
+      "wiki.Social Engineering (Sicherheit)",
+      "wiki.Computerwurm",
+      "wiki.Trojaner",
+      "wiki.Computervirus",
+      "wiki.Phishing",
+      "wiki.Zertifizierung",
+      "wiki.BSI",
+      "wiki.Pretty Good Privacy",
+      "wiki.E-Mail",
+      "wiki.Intrusion Detection System",
+      "wiki.Spionage",
+      "wiki.Verschlüsselung"
+    ],
+    "size": 84
+  },
+  {
+    "name": "wiki.Datenschutz",
+    "imports": [
+      "wiki.Informationelle Selbstbestimmung",
+      "wiki.Bundesdatenschutzgesetz",
+      "wiki.Volkszählungsurteil",
+      "wiki.Internet",
+      "wiki.E-Mail"
+    ],
+    "size": 190
+  },
+  {
+    "name": "wiki.Datenschutz",
+    "imports": [
+      "wiki.Informationelle Selbstbestimmung",
+      "wiki.Bundesdatenschutzgesetz",
+      "wiki.Volkszählungsurteil",
+      "wiki.Internet",
+      "wiki.E-Mail"
+    ],
+    "size": 190
+  },
+  {
+    "name": "wiki.Bundesdatenschutzgesetz",
+    "imports": [
+      "wiki.Datenschutz",
+      "wiki.Volkszählungsurteil",
+      "wiki.E-Mail",
+      "wiki.Internetsurfen"
+    ],
+    "size": 62
+  },
+  {
+    "name": "wiki.Bundesdatenschutzgesetz",
+    "imports": [
+      "wiki.Datenschutz",
+      "wiki.Volkszählungsurteil",
+      "wiki.E-Mail",
+      "wiki.Internetsurfen"
+    ],
+    "size": 62
+  },
+  {
+    "name": "wiki.Datensicherung",
+    "imports": [
+      "wiki.Internet",
+      "wiki.Personal Computer",
+      "wiki.Bundesdatenschutzgesetz",
+      "wiki.Betriebssystem",
+      "wiki.BSI"
+    ],
+    "size": 106
+  },
+  {
+    "name": "wiki.Personal Computer",
+    "imports": [
+      "wiki.Computer",
+      "wiki.Schnittstelle",
+      "wiki.Hacker",
+      "wiki.Betriebssystem",
+      "wiki.Software",
+      "wiki.Normung"
+    ],
+    "size": 201
+  },
+  {
+    "name": "wiki.Computer",
+    "imports": [
+      "wiki.Personal Computer",
+      "wiki.Software",
+      "wiki.Computerprogramm",
+      "wiki.Betriebssystem",
+      "wiki.Internet"
+    ],
+    "size": 510
+  },
+  {
+    "name": "wiki.Internet",
+    "imports": [
+      "wiki.Rechnernetz",
+      "wiki.E-Mail",
+      "wiki.Datenaustausch",
+      "wiki.IETF",
+      "wiki.Computer",
+      "wiki.Betriebssystem",
+      "wiki.Webbrowser",
+      "wiki.Internetsurfen",
+      "wiki.Spam",
+      "wiki.Sicherheit",
+      "wiki.Datenschutz",
+      "wiki.Verschlüsselung",
+      "wiki.WLAN",
+      "wiki.Server",
+      "wiki.HTTPS",
+      "wiki.Firewall",
+      "wiki.Infrastruktur",
+      "wiki.Internetkriminalität"
+    ],
+    "size": 235
+  },
+  {
+    "name": "wiki.Computer",
+    "imports": [
+      "wiki.Personal Computer",
+      "wiki.Software",
+      "wiki.Computerprogramm",
+      "wiki.Betriebssystem",
+      "wiki.Internet"
+    ],
+    "size": 510
+  },
+  {
+    "name": "wiki.Netzwerk",
+    "imports": [
+      "wiki.Rechnernetz"
+    ],
+    "size": 63
+  },
+  {
+    "name": "wiki.Risikomanagement",
+    "imports": [
+      "wiki.Gefahr",
+      "wiki.Verfügbarkeit",
+      "wiki.Sicherheit",
+      "wiki.Software",
+      "wiki.Softwaretechnik",
+      "wiki.Analyse"
+    ],
+    "size": 103
+  },
+  {
+    "name": "wiki.Sabotage",
+    "imports": [
+      "wiki.Spionage"
+    ],
+    "size": 39
+  },
+  {
+    "name": "wiki.Spionage",
+    "imports": [
+      "wiki.Wirtschaftsspionage",
+      "wiki.Netzwerksicherheit"
+    ],
+    "size": 54
+  },
+  {
+    "name": "wiki.Computervirus",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Betriebssystem",
+      "wiki.Software",
+      "wiki.Computerwurm",
+      "wiki.Trojaner",
+      "wiki.Zugriffsrecht",
+      "wiki.Open Source",
+      "wiki.Personal Firewall",
+      "wiki.Antivirenprogramm"
+    ],
+    "size": 202
+  },
+  {
+    "name": "wiki.Trojaner",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Schadprogramm",
+      "wiki.Computervirus",
+      "wiki.Backdoor",
+      "wiki.Firewall",
+      "wiki.Schnittstelle",
+      "wiki.E-Mail",
+      "wiki.Computerwurm",
+      "wiki.Passwort",
+      "wiki.Denial of Service",
+      "wiki.Antivirenprogramm",
+      "wiki.Personal Firewall",
+      "wiki.Phishing"
+    ],
+    "size": 74
+  },
+  {
+    "name": "wiki.Computerwurm",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Rechnernetz",
+      "wiki.Technische Kompromittierung",
+      "wiki.Computervirus",
+      "wiki.Trojaner",
+      "wiki.Pufferüberlauf",
+      "wiki.Computerwurm",
+      "wiki.E-Mail",
+      "wiki.Server",
+      "wiki.Social Engineering (Sicherheit)",
+      "wiki.Personal Firewall",
+      "wiki.Denial of Service",
+      "wiki.Antivirenprogramm",
+      "wiki.Firewall",
+      "wiki.Betriebssystem",
+      "wiki.Software",
+      "wiki.Open Source",
+      "wiki.Backdoor",
+      "wiki.Internet"
+    ],
+    "size": 225
+  },
+  {
+    "name": "wiki.Schadprogramm",
+    "imports": [
+      "wiki.Software",
+      "wiki.Computerprogramm",
+      "wiki.Programmfehler",
+      "wiki.Computervirus",
+      "wiki.Technische Kompromittierung",
+      "wiki.Sicherheitssoftware",
+      "wiki.Firewall",
+      "wiki.Antivirenprogramm",
+      "wiki.Computer",
+      "wiki.Computerwurm",
+      "wiki.Rechnernetz",
+      "wiki.Internet",
+      "wiki.Trojaner",
+      "wiki.Spyware",
+      "wiki.Backdoor",
+      "wiki.Denial of Service",
+      "wiki.E-Mail",
+      "wiki.Open Source",
+      "wiki.Botnet",
+      "wiki.Pharming (Internet)",
+      "wiki.Phishing",
+      "wiki.Spam",
+      "wiki.Vishing"
+    ],
+    "size": 63
+  },
+  {
+    "name": "wiki.Spoofing",
+    "imports": [
+      "wiki.Informationstechnik",
+      "wiki.Webanwendung",
+      "wiki.Phishing"
+    ],
+    "size": 24
+  },
+  {
+    "name": "wiki.Phishing",
+    "imports": [
+      "wiki.Internet",
+      "wiki.Social Engineering (Sicherheit)",
+      "wiki.E-Mail",
+      "wiki.Vishing",
+      "wiki.Persönliche Identifikationsnummer",
+      "wiki.Transaktionsnummer",
+      "wiki.Schadprogramm",
+      "wiki.Pharming (Internet)",
+      "wiki.Trojaner",
+      "wiki.Antivirenprogramm",
+      "wiki.Man-in-the-middle-Angriff",
+      "wiki.Spam"
+    ],
+    "size": 87
+  },
+  {
+    "name": "wiki.Pharming (Internet)",
+    "imports": [
+      "wiki.Internetkriminalität",
+      "wiki.Webbrowser",
+      "wiki.Phishing",
+      "wiki.Trojaner",
+      "wiki.Computervirus",
+      "wiki.Electronic Banking",
+      "wiki.Firewall"
+    ],
+    "size": 34
+  },
+  {
+    "name": "wiki.Vishing",
+    "imports": [
+      "wiki.Social Engineering (Sicherheit)",
+      "wiki.Phishing",
+      "wiki.Spam",
+      "wiki.Persönliche Identifikationsnummer",
+      "wiki.Transaktionsnummer"
+    ],
+    "size": 10
+  },
+  {
+    "name": "wiki.Denial of Service",
+    "imports": [
+      "wiki.Server",
+      "wiki.Computer",
+      "wiki.Programmfehler",
+      "wiki.Absturz (Computer)",
+      "wiki.Backdoor",
+      "wiki.Computerwurm",
+      "wiki.Infektion",
+      "wiki.Botnet",
+      "wiki.Computersabotage",
+      "wiki.Trojaner",
+      "wiki.Informationstechnik",
+      "wiki.Firewall",
+      "wiki.Risiko"
+    ],
+    "size": 87
+  },
+  {
+    "name": "wiki.Man-in-the-middle-Angriff",
+    "imports": [
+      "wiki.Rechnernetz",
+      "wiki.WLAN",
+      "wiki.Snarfing",
+      "wiki.Pharming (Internet)",
+      "wiki.Verschlüsselung",
+      "wiki.HTTPS",
+      "wiki.Transaktionsnummer"
+    ],
+    "size": 35
+  },
+  {
+    "name": "wiki.Snarfing",
+    "imports": [
+      "wiki.WLAN",
+      "wiki.Sicherheitslücke (Software)",
+      "wiki.Man-in-the-middle-Angriff",
+      "wiki.Software",
+      "wiki.Verschlüsselung",
+      "wiki.Zugriffsrecht"
+    ],
+    "size": 19
+  },
+  {
+    "name": "wiki.Social Engineering (Sicherheit)",
+    "imports": [
+      "wiki.Hacker",
+      "wiki.Systemadministrator",
+      "wiki.Phishing",
+      "wiki.E-Mail",
+      "wiki.Penetrationstest (Informatik)"
+    ],
+    "size": 27
+  },
+  {
+    "name": "wiki.Computervirus",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Betriebssystem",
+      "wiki.Software",
+      "wiki.Computerwurm",
+      "wiki.Trojaner",
+      "wiki.Zugriffsrecht",
+      "wiki.Open Source",
+      "wiki.Personal Firewall",
+      "wiki.Antivirenprogramm"
+    ],
+    "size": 202
+  },
+  {
+    "name": "wiki.Computerwurm",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Rechnernetz",
+      "wiki.Technische Kompromittierung",
+      "wiki.Computervirus",
+      "wiki.Trojaner",
+      "wiki.Pufferüberlauf",
+      "wiki.Computerwurm",
+      "wiki.E-Mail",
+      "wiki.Server",
+      "wiki.Social Engineering (Sicherheit)",
+      "wiki.Personal Firewall",
+      "wiki.Denial of Service",
+      "wiki.Antivirenprogramm",
+      "wiki.Firewall",
+      "wiki.Betriebssystem",
+      "wiki.Software",
+      "wiki.Open Source",
+      "wiki.Backdoor",
+      "wiki.Internet"
+    ],
+    "size": 225
+  },
+  {
+    "name": "wiki.Spyware",
+    "imports": [
+      "wiki.Spionage",
+      "wiki.Computerprogramm",
+      "wiki.Software",
+      "wiki.Internetsurfen",
+      "wiki.Internet",
+      "wiki.Webbrowser",
+      "wiki.Computervirus",
+      "wiki.Antivirenprogramm",
+      "wiki.E-Mail",
+      "wiki.Betriebssystem",
+      "wiki.Personal Firewall",
+      "wiki.Schadprogramm",
+      "wiki.Trojaner"
+    ],
+    "size": 63
+  },
+  {
+    "name": "wiki.Trojaner",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Schadprogramm",
+      "wiki.Computervirus",
+      "wiki.Backdoor",
+      "wiki.Firewall",
+      "wiki.Schnittstelle",
+      "wiki.E-Mail",
+      "wiki.Computerwurm",
+      "wiki.Passwort",
+      "wiki.Denial of Service",
+      "wiki.Antivirenprogramm",
+      "wiki.Personal Firewall",
+      "wiki.Phishing"
+    ],
+    "size": 74
+  },
+  {
+    "name": "wiki.Backdoor",
+    "imports": [
+      "wiki.Software",
+      "wiki.Trojaner",
+      "wiki.Open Source",
+      "wiki.Schadprogramm"
+    ],
+    "size": 24
+  },
+  {
+    "name": "wiki.Spam",
+    "imports": [
+      "wiki.E-Mail",
+      "wiki.Phishing",
+      "wiki.Botnet",
+      "wiki.Webbrowser",
+      "wiki.Trojaner",
+      "wiki.Denial of Service",
+      "wiki.Computerwurm",
+      "wiki.IETF"
+    ],
+    "size": 199
+  },
+  {
+    "name": "wiki.Spam",
+    "imports": [
+      "wiki.E-Mail",
+      "wiki.Phishing",
+      "wiki.Botnet",
+      "wiki.Webbrowser",
+      "wiki.Trojaner",
+      "wiki.Denial of Service",
+      "wiki.Computerwurm",
+      "wiki.IETF"
+    ],
+    "size": 199
+  },
+  {
+    "name": "wiki.Denial of Service",
+    "imports": [
+      "wiki.Server",
+      "wiki.Computer",
+      "wiki.Programmfehler",
+      "wiki.Absturz (Computer)",
+      "wiki.Backdoor",
+      "wiki.Computerwurm",
+      "wiki.Infektion",
+      "wiki.Botnet",
+      "wiki.Computersabotage",
+      "wiki.Trojaner",
+      "wiki.Informationstechnik",
+      "wiki.Firewall",
+      "wiki.Risiko"
+    ],
+    "size": 87
+  },
+  {
+    "name": "wiki.Botnet",
+    "imports": [
+      "wiki.Rechnernetz",
+      "wiki.Spam",
+      "wiki.Phishing",
+      "wiki.E-Mail",
+      "wiki.Denial of Service",
+      "wiki.Internetkriminalität",
+      "wiki.Webanwendung",
+      "wiki.Trojaner",
+      "wiki.Sicherheitslücke (Software)",
+      "wiki.Betriebssystem",
+      "wiki.Webbrowser",
+      "wiki.Computerwurm",
+      "wiki.Verfügbarkeit"
+    ],
+    "size": 54
+  },
+  {
+    "name": "wiki.Software",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Betriebssystem",
+      "wiki.Softwaretechnik",
+      "wiki.Schnittstelle",
+      "wiki.Softwaretest",
+      "wiki.Programmfehler",
+      "wiki.Computer",
+      "wiki.Open Source",
+      "wiki.Spyware",
+      "wiki.Personal Computer",
+      "wiki.Analyse"
+    ],
+    "size": 197
+  },
+  {
+    "name": "wiki.Analyse",
+    "imports": [],
+    "size": 38
+  },
+  {
+    "name": "wiki.Technische Kompromittierung",
+    "imports": [
+      "wiki.Systemadministrator",
+      "wiki.Computervirus"
+    ],
+    "size": 7
+  },
+  {
+    "name": "wiki.Sicherheitskonzept",
+    "imports": [
+      "wiki.Analyse",
+      "wiki.Bedrohung",
+      "wiki.Risikomanagement"
+    ],
+    "size": 16
+  },
+  {
+    "name": "wiki.Information Security Management System",
+    "imports": [
+      "wiki.IT-Sicherheitsverfahren",
+      "wiki.BSI",
+      "wiki.Vertraulichkeit",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Verfügbarkeit",
+      "wiki.Sicherheitsrichtlinie",
+      "wiki.Sicherheitskonzept"
+    ],
+    "size": 12
+  },
+  {
+    "name": "wiki.Zugriffskontrolle",
+    "imports": [
+      "wiki.Zugriffsrecht",
+      "wiki.Passwort"
+    ],
+    "size": 39
+  },
+  {
+    "name": "wiki.Datensicherung",
+    "imports": [
+      "wiki.Internet",
+      "wiki.Personal Computer",
+      "wiki.Bundesdatenschutzgesetz",
+      "wiki.Betriebssystem",
+      "wiki.BSI"
+    ],
+    "size": 106
+  },
+  {
+    "name": "wiki.Verschlüsselung",
+    "imports": [
+      "wiki.Kryptographie",
+      "wiki.Rechnernetz"
+    ],
+    "size": 65
+  },
+  {
+    "name": "wiki.Sicherheitskonzept",
+    "imports": [
+      "wiki.Analyse",
+      "wiki.Bedrohung",
+      "wiki.Risikomanagement"
+    ],
+    "size": 16
+  },
+  {
+    "name": "wiki.Betriebssystem",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Computer",
+      "wiki.Schnittstelle",
+      "wiki.Personal Computer",
+      "wiki.Betriebssystem",
+      "wiki.Software",
+      "wiki.Systemadministrator",
+      "wiki.Programmfehler"
+    ],
+    "size": 214
+  },
+  {
+    "name": "wiki.Webbrowser",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Internetsurfen",
+      "wiki.Webanwendung",
+      "wiki.Computer",
+      "wiki.Internet",
+      "wiki.Personal Computer",
+      "wiki.E-Mail",
+      "wiki.Open Source",
+      "wiki.Informationstechnik"
+    ],
+    "size": 155
+  },
+  {
+    "name": "wiki.Sicherheitssoftware",
+    "imports": [
+      "wiki.Authentizität",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Vertraulichkeit",
+      "wiki.Verfügbarkeit",
+      "wiki.Schadprogramm",
+      "wiki.Intrusion Detection System",
+      "wiki.Firewall",
+      "wiki.Personal Firewall",
+      "wiki.Datensicherung"
+    ],
+    "size": 39
+  },
+  {
+    "name": "wiki.E-Mail",
+    "imports": [
+      "wiki.Rechnernetz",
+      "wiki.Webanwendung",
+      "wiki.Elektronische Signatur",
+      "wiki.Computerwurm",
+      "wiki.Mailserver",
+      "wiki.Anonymität",
+      "wiki.Datenschutz",
+      "wiki.Spam",
+      "wiki.Authentizität",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Verschlüsselung",
+      "wiki.E-Mail",
+      "wiki.Pretty Good Privacy",
+      "wiki.Phishing",
+      "wiki.Server",
+      "wiki.IETF",
+      "wiki.Infrastruktur"
+    ],
+    "size": 200
+  },
+  {
+    "name": "wiki.Internet",
+    "imports": [
+      "wiki.Rechnernetz",
+      "wiki.E-Mail",
+      "wiki.Datenaustausch",
+      "wiki.IETF",
+      "wiki.Computer",
+      "wiki.Betriebssystem",
+      "wiki.Webbrowser",
+      "wiki.Internetsurfen",
+      "wiki.Spam",
+      "wiki.Sicherheit",
+      "wiki.Datenschutz",
+      "wiki.Verschlüsselung",
+      "wiki.WLAN",
+      "wiki.Server",
+      "wiki.HTTPS",
+      "wiki.Firewall",
+      "wiki.Infrastruktur",
+      "wiki.Internetkriminalität"
+    ],
+    "size": 235
+  },
+  {
+    "name": "wiki.Mailserver",
+    "imports": [
+      "wiki.E-Mail",
+      "wiki.Spam",
+      "wiki.Schadprogramm"
+    ],
+    "size": 19
+  },
+  {
+    "name": "wiki.Antivirenprogramm",
+    "imports": [
+      "wiki.Software",
+      "wiki.Computervirus",
+      "wiki.Computerwurm",
+      "wiki.Trojaner",
+      "wiki.Internet",
+      "wiki.Schnittstelle",
+      "wiki.Schadprogramm",
+      "wiki.E-Mail",
+      "wiki.Intrusion Detection System",
+      "wiki.Mailserver",
+      "wiki.Spyware",
+      "wiki.Systemadministrator"
+    ],
+    "size": 321
+  },
+  {
+    "name": "wiki.Schadprogramm",
+    "imports": [
+      "wiki.Software",
+      "wiki.Computerprogramm",
+      "wiki.Programmfehler",
+      "wiki.Computervirus",
+      "wiki.Technische Kompromittierung",
+      "wiki.Sicherheitssoftware",
+      "wiki.Firewall",
+      "wiki.Antivirenprogramm",
+      "wiki.Computer",
+      "wiki.Computerwurm",
+      "wiki.Rechnernetz",
+      "wiki.Internet",
+      "wiki.Trojaner",
+      "wiki.Spyware",
+      "wiki.Backdoor",
+      "wiki.Denial of Service",
+      "wiki.E-Mail",
+      "wiki.Open Source",
+      "wiki.Botnet",
+      "wiki.Pharming (Internet)",
+      "wiki.Phishing",
+      "wiki.Spam",
+      "wiki.Vishing"
+    ],
+    "size": 63
+  },
+  {
+    "name": "wiki.Computervirus",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Betriebssystem",
+      "wiki.Software",
+      "wiki.Computerwurm",
+      "wiki.Trojaner",
+      "wiki.Zugriffsrecht",
+      "wiki.Open Source",
+      "wiki.Personal Firewall",
+      "wiki.Antivirenprogramm"
+    ],
+    "size": 202
+  },
+  {
+    "name": "wiki.Webbrowser",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Internetsurfen",
+      "wiki.Webanwendung",
+      "wiki.Computer",
+      "wiki.Internet",
+      "wiki.Personal Computer",
+      "wiki.E-Mail",
+      "wiki.Open Source",
+      "wiki.Informationstechnik"
+    ],
+    "size": 155
+  },
+  {
+    "name": "wiki.Cracker (Computersicherheit)",
+    "imports": [
+      "wiki.Hacker",
+      "wiki.Software",
+      "wiki.Ausspähen von Daten",
+      "wiki.Computersabotage",
+      "wiki.Datenveränderung"
+    ],
+    "size": 15
+  },
+  {
+    "name": "wiki.Open Source",
+    "imports": [
+      "wiki.Webbrowser",
+      "wiki.Kryptographie",
+      "wiki.Pretty Good Privacy",
+      "wiki.Backdoor",
+      "wiki.Spionage",
+      "wiki.Wirtschaftsspionage"
+    ],
+    "size": 100
+  },
+  {
+    "name": "wiki.Firewall",
+    "imports": [
+      "wiki.Rechnernetz",
+      "wiki.Sicherheitskonzept",
+      "wiki.Intrusion Detection System",
+      "wiki.Betriebssystem",
+      "wiki.Sicherheitsrichtlinie",
+      "wiki.Schadprogramm",
+      "wiki.Open Source",
+      "wiki.Personal Firewall",
+      "wiki.Computerwurm",
+      "wiki.Software",
+      "wiki.Firewall",
+      "wiki.Denial of Service"
+    ],
+    "size": 163
+  },
+  {
+    "name": "wiki.Personal Firewall",
+    "imports": [
+      "wiki.Software",
+      "wiki.Personal Computer",
+      "wiki.BSI",
+      "wiki.Internet",
+      "wiki.Firewall",
+      "wiki.Rechnernetz",
+      "wiki.Computerwurm",
+      "wiki.Backdoor",
+      "wiki.Spyware",
+      "wiki.Betriebssystem",
+      "wiki.E-Mail",
+      "wiki.Intrusion Detection System",
+      "wiki.Schadprogramm",
+      "wiki.Webbrowser",
+      "wiki.Technische Kompromittierung",
+      "wiki.Systemadministrator",
+      "wiki.Antivirenprogramm",
+      "wiki.Sicherheitspaket",
+      "wiki.IT-Grundschutz-Kataloge",
+      "wiki.Datensicherung",
+      "wiki.Sicherheitslücke (Software)",
+      "wiki.Programmfehler",
+      "wiki.Server",
+      "wiki.Passwort",
+      "wiki.Pufferüberlauf",
+      "wiki.Schnittstelle",
+      "wiki.Trojaner",
+      "wiki.Zugriffsrecht",
+      "wiki.Open Source",
+      "wiki.AppArmor"
+    ],
+    "size": 253
+  },
+  {
+    "name": "wiki.Systemadministrator",
+    "imports": [
+      "wiki.Zugriffsrecht",
+      "wiki.Informationstechnik",
+      "wiki.Computer",
+      "wiki.Server",
+      "wiki.Personal Computer",
+      "wiki.Rechnernetz",
+      "wiki.Systemadministrator",
+      "wiki.Risiko",
+      "wiki.Betriebssystem",
+      "wiki.E-Mail",
+      "wiki.Sicherheitskonzept",
+      "wiki.Datensicherung",
+      "wiki.Software",
+      "wiki.Mailserver"
+    ],
+    "size": 124
+  },
+  {
+    "name": "wiki.Internet",
+    "imports": [
+      "wiki.Rechnernetz",
+      "wiki.E-Mail",
+      "wiki.Datenaustausch",
+      "wiki.IETF",
+      "wiki.Computer",
+      "wiki.Betriebssystem",
+      "wiki.Webbrowser",
+      "wiki.Internetsurfen",
+      "wiki.Spam",
+      "wiki.Sicherheit",
+      "wiki.Datenschutz",
+      "wiki.Verschlüsselung",
+      "wiki.WLAN",
+      "wiki.Server",
+      "wiki.HTTPS",
+      "wiki.Firewall",
+      "wiki.Infrastruktur",
+      "wiki.Internetkriminalität"
+    ],
+    "size": 235
+  },
+  {
+    "name": "wiki.E-Mail",
+    "imports": [
+      "wiki.Rechnernetz",
+      "wiki.Webanwendung",
+      "wiki.Elektronische Signatur",
+      "wiki.Computerwurm",
+      "wiki.Mailserver",
+      "wiki.Anonymität",
+      "wiki.Datenschutz",
+      "wiki.Spam",
+      "wiki.Authentizität",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Verschlüsselung",
+      "wiki.E-Mail",
+      "wiki.Pretty Good Privacy",
+      "wiki.Phishing",
+      "wiki.Server",
+      "wiki.IETF",
+      "wiki.Infrastruktur"
+    ],
+    "size": 200
+  },
+  {
+    "name": "wiki.Zugriffsrecht",
+    "imports": [
+      "wiki.Zugriffskontrolle",
+      "wiki.Betriebssystem",
+      "wiki.Zertifizierung"
+    ],
+    "size": 30
+  },
+  {
+    "name": "wiki.AppArmor",
+    "imports": [
+      "wiki.Betriebssystem",
+      "wiki.Sicherheitssoftware"
+    ],
+    "size": 22
+  },
+  {
+    "name": "wiki.Aktive Inhalte",
+    "imports": [
+      "wiki.Personal Computer",
+      "wiki.Betriebssystem",
+      "wiki.BSI"
+    ],
+    "size": 23
+  },
+  {
+    "name": "wiki.Computerprogramm",
+    "imports": [
+      "wiki.Computer",
+      "wiki.Software",
+      "wiki.Betriebssystem",
+      "wiki.Softwaretechnik",
+      "wiki.Server"
+    ],
+    "size": 114
+  },
+  {
+    "name": "wiki.Infektion",
+    "imports": [
+      "wiki.Software",
+      "wiki.Computer"
+    ],
+    "size": 170
+  },
+  {
+    "name": "wiki.Pretty Good Privacy",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Verschlüsselung",
+      "wiki.Elektronische Signatur",
+      "wiki.Passwort",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Authentizität",
+      "wiki.Kryptographie"
+    ],
+    "size": 46
+  },
+  {
+    "name": "wiki.Verschlüsselung",
+    "imports": [
+      "wiki.Kryptographie",
+      "wiki.Rechnernetz"
+    ],
+    "size": 65
+  },
+  {
+    "name": "wiki.Kryptographie",
+    "imports": [
+      "wiki.Verschlüsselung",
+      "wiki.Computer",
+      "wiki.Vertraulichkeit",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Authentizität",
+      "wiki.Pretty Good Privacy",
+      "wiki.Elektronische Signatur"
+    ],
+    "size": 128
+  },
+  {
+    "name": "wiki.Massenspeicher",
+    "imports": [
+      "wiki.Informationstechnik",
+      "wiki.Schnittstelle"
+    ],
+    "size": 41
+  },
+  {
+    "name": "wiki.Internetsurfen",
+    "imports": [
+      "wiki.Webbrowser"
+    ],
+    "size": 8
+  },
+  {
+    "name": "wiki.HTTPS",
+    "imports": [
+      "wiki.Verschlüsselung",
+      "wiki.Webbrowser",
+      "wiki.Phishing",
+      "wiki.Electronic Banking",
+      "wiki.Man-in-the-middle-Angriff",
+      "wiki.Datenschutz",
+      "wiki.Open Source",
+      "wiki.Persönliche Identifikationsnummer",
+      "wiki.Transaktionsnummer"
+    ],
+    "size": 126
+  },
+  {
+    "name": "wiki.Schlüssel (Informatik)",
+    "imports": [
+      "wiki.Verschlüsselung",
+      "wiki.Kryptographie",
+      "wiki.Datenstruktur",
+      "wiki.Integrität (Informationssicherheit)"
+    ],
+    "size": 54
+  },
+  {
+    "name": "wiki.WLAN",
+    "imports": [
+      "wiki.Snarfing",
+      "wiki.Verschlüsselung",
+      "wiki.Firewall",
+      "wiki.WLAN",
+      "wiki.Bundesdatenschutzgesetz",
+      "wiki.BSI"
+    ],
+    "size": 200
+  },
+  {
+    "name": "wiki.BSI",
+    "imports": [
+      "wiki.Netzwerksicherheit",
+      "wiki.Zertifizierung",
+      "wiki.IT-Grundschutz-Kataloge",
+      "wiki.Datenschutz",
+      "wiki.Common Criteria",
+      "wiki.Open Source",
+      "wiki.Elektronische Signatur"
+    ],
+    "size": 62
+  },
+  {
+    "name": "wiki.Passwort",
+    "imports": [
+      "wiki.Persönliche Identifikationsnummer",
+      "wiki.Transaktionsnummer",
+      "wiki.Electronic Banking",
+      "wiki.Phishing",
+      "wiki.Technische Kompromittierung"
+    ],
+    "size": 70
+  },
+  {
+    "name": "wiki.Persönliche Identifikationsnummer",
+    "imports": [
+      "wiki.Electronic Banking",
+      "wiki.Transaktionsnummer",
+      "wiki.BSI"
+    ],
+    "size": 20
+  },
+  {
+    "name": "wiki.Transaktionsnummer",
+    "imports": [
+      "wiki.Electronic Banking",
+      "wiki.Persönliche Identifikationsnummer",
+      "wiki.Phishing",
+      "wiki.Computervirus",
+      "wiki.Man-in-the-middle-Angriff",
+      "wiki.BSI",
+      "wiki.Trojaner",
+      "wiki.Pharming (Internet)",
+      "wiki.Verschlüsselung",
+      "wiki.HTTPS",
+      "wiki.Elektronische Signatur",
+      "wiki.Kryptographie"
+    ],
+    "size": 77
+  },
+  {
+    "name": "wiki.Datensicherung",
+    "imports": [
+      "wiki.Internet",
+      "wiki.Personal Computer",
+      "wiki.Bundesdatenschutzgesetz",
+      "wiki.Betriebssystem",
+      "wiki.BSI"
+    ],
+    "size": 106
+  },
+  {
+    "name": "wiki.Datensicherung",
+    "imports": [
+      "wiki.Internet",
+      "wiki.Personal Computer",
+      "wiki.Bundesdatenschutzgesetz",
+      "wiki.Betriebssystem",
+      "wiki.BSI"
+    ],
+    "size": 106
+  },
+  {
+    "name": "wiki.Softwaretechnik",
+    "imports": [
+      "wiki.Software",
+      "wiki.Datenstruktur",
+      "wiki.Informationstechnik",
+      "wiki.Netzwerk",
+      "wiki.Analyse",
+      "wiki.Softwaretest",
+      "wiki.Risikomanagement",
+      "wiki.Qualitätsmanagement",
+      "wiki.Programmfehler",
+      "wiki.Server"
+    ],
+    "size": 127
+  },
+  {
+    "name": "wiki.Schnittstelle",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Betriebssystem",
+      "wiki.Personal Computer",
+      "wiki.WLAN"
+    ],
+    "size": 129
+  },
+  {
+    "name": "wiki.Programmfehler",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Softwaretest",
+      "wiki.Softwaretechnik",
+      "wiki.Software",
+      "wiki.Betriebssystem",
+      "wiki.Qualitätsmanagement"
+    ],
+    "size": 134
+  },
+  {
+    "name": "wiki.Softwaretest",
+    "imports": [
+      "wiki.Software",
+      "wiki.Softwaretest",
+      "wiki.Qualitätsmanagement",
+      "wiki.Softwaretechnik",
+      "wiki.Computerprogramm",
+      "wiki.Programmfehler",
+      "wiki.Sicherheit",
+      "wiki.Rechnernetz",
+      "wiki.Datenübertragung"
+    ],
+    "size": 136
+  },
+  {
+    "name": "wiki.Datenstruktur",
+    "imports": [
+      "wiki.Softwaretechnik",
+      "wiki.Schlüssel (Informatik)"
+    ],
+    "size": 74
+  },
+  {
+    "name": "wiki.Datenaustausch",
+    "imports": [
+      "wiki.Computer",
+      "wiki.Internet",
+      "wiki.Datenübertragung"
+    ],
+    "size": 28
+  },
+  {
+    "name": "wiki.Sicherheitslücke (Software)",
+    "imports": [
+      "wiki.Programmfehler",
+      "wiki.Risiko",
+      "wiki.Computer",
+      "wiki.Netzwerk",
+      "wiki.Firewall",
+      "wiki.Sicherheitssoftware",
+      "wiki.Betriebssystem",
+      "wiki.Software",
+      "wiki.Pufferüberlauf",
+      "wiki.Open Source"
+    ],
+    "size": 37
+  },
+  {
+    "name": "wiki.Pufferüberlauf",
+    "imports": [
+      "wiki.Sicherheitslücke (Software)",
+      "wiki.Software",
+      "wiki.Internet",
+      "wiki.Server",
+      "wiki.Netzwerksicherheit"
+    ],
+    "size": 80
+  },
+  {
+    "name": "wiki.Rechnernetz",
+    "imports": [
+      "wiki.Computer",
+      "wiki.Server",
+      "wiki.Internet",
+      "wiki.Verschlüsselung",
+      "wiki.Netzwerksicherheit"
+    ],
+    "size": 84
+  },
+  {
+    "name": "wiki.Absturz (Computer)",
+    "imports": [
+      "wiki.Computer",
+      "wiki.Computerprogramm",
+      "wiki.Betriebssystem",
+      "wiki.Programmfehler",
+      "wiki.Software",
+      "wiki.Internet"
+    ],
+    "size": 51
+  },
+  {
+    "name": "wiki.Sicherheitsrichtlinie",
+    "imports": [
+      "wiki.Verfügbarkeit",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Vertraulichkeit",
+      "wiki.Authentizität",
+      "wiki.Firewall",
+      "wiki.Netzwerksicherheit",
+      "wiki.BSI"
+    ],
+    "size": 12
+  },
+  {
+    "name": "wiki.Sicherheitsrichtlinie",
+    "imports": [
+      "wiki.Verfügbarkeit",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Vertraulichkeit",
+      "wiki.Authentizität",
+      "wiki.Firewall",
+      "wiki.Netzwerksicherheit",
+      "wiki.BSI"
+    ],
+    "size": 12
+  },
+  {
+    "name": "wiki.Wirtschaftsspionage",
+    "imports": [
+      "wiki.E-Mail",
+      "wiki.Internet",
+      "wiki.Verschlüsselung",
+      "wiki.Social Engineering (Sicherheit)",
+      "wiki.BSI",
+      "wiki.Spionage",
+      "wiki.Internetkriminalität"
+    ],
+    "size": 36
+  },
+  {
+    "name": "wiki.Sabotage",
+    "imports": [
+      "wiki.Spionage"
+    ],
+    "size": 39
+  },
+  {
+    "name": "wiki.Social Engineering (Sicherheit)",
+    "imports": [
+      "wiki.Hacker",
+      "wiki.Systemadministrator",
+      "wiki.Phishing",
+      "wiki.E-Mail",
+      "wiki.Penetrationstest (Informatik)"
+    ],
+    "size": 27
+  },
+  {
+    "name": "wiki.Webanwendung",
+    "imports": [
+      "wiki.Webbrowser",
+      "wiki.Internet",
+      "wiki.Betriebssystem",
+      "wiki.Denial of Service",
+      "wiki.Phishing",
+      "wiki.Social Engineering (Sicherheit)",
+      "wiki.E-Mail",
+      "wiki.Persönliche Identifikationsnummer",
+      "wiki.Transaktionsnummer"
+    ],
+    "size": 82
+  },
+  {
+    "name": "wiki.Penetrationstest (Informatik)",
+    "imports": [
+      "wiki.Informationstechnik",
+      "wiki.Hacker",
+      "wiki.Social Engineering (Sicherheit)",
+      "wiki.BSI",
+      "wiki.Ausspähen von Daten",
+      "wiki.Denial of Service",
+      "wiki.Betriebssystem"
+    ],
+    "size": 35
+  },
+  {
+    "name": "wiki.IT-Sicherheitsaudit",
+    "imports": [
+      "wiki.Audit",
+      "wiki.Informationstechnik",
+      "wiki.Computerprogramm",
+      "wiki.Qualitätsmanagement",
+      "wiki.Sicherheitslücke (Software)",
+      "wiki.Netzwerksicherheit",
+      "wiki.Sicherheitsrichtlinie",
+      "wiki.Information Security Management System",
+      "wiki.Systemadministrator",
+      "wiki.Personal Computer",
+      "wiki.Mailserver",
+      "wiki.Social Engineering (Sicherheit)",
+      "wiki.Betriebssystem",
+      "wiki.Penetrationstest (Informatik)",
+      "wiki.Internet",
+      "wiki.Vertraulichkeit",
+      "wiki.IT-Grundschutz-Kataloge",
+      "wiki.BSI",
+      "wiki.IT Infrastructure Library",
+      "wiki.ITSEC",
+      "wiki.Open Source",
+      "wiki.Netzwerk",
+      "wiki.WLAN",
+      "wiki.Verschlüsselung",
+      "wiki.Firewall",
+      "wiki.Intrusion Detection System",
+      "wiki.Zugriffskontrolle",
+      "wiki.Certified Information Systems Auditor",
+      "wiki.Certified Information Security Manager",
+      "wiki.ISACA",
+      "wiki.Botnet",
+      "wiki.Computerwurm",
+      "wiki.Computervirus",
+      "wiki.Trojaner",
+      "wiki.Computer",
+      "wiki.Spam",
+      "wiki.Denial of Service",
+      "wiki.Ausspähen von Daten",
+      "wiki.Backdoor",
+      "wiki.Spionage",
+      "wiki.Rechnernetz",
+      "wiki.Programmfehler",
+      "wiki.Pufferüberlauf",
+      "wiki.Phishing",
+      "wiki.Personal Firewall"
+    ],
+    "size": 263
+  },
+  {
+    "name": "wiki.Infrastruktur",
+    "imports": [
+      "wiki.Internet"
+    ],
+    "size": 91
+  },
+  {
+    "name": "wiki.Audit",
+    "imports": [
+      "wiki.Qualitätsmanagement",
+      "wiki.Datenschutz",
+      "wiki.Zertifizierung",
+      "wiki.Informationstechnik",
+      "wiki.Software"
+    ],
+    "size": 43
+  },
+  {
+    "name": "wiki.Normung",
+    "imports": [
+      "wiki.Sicherheit",
+      "wiki.Qualitätsmanagementnorm"
+    ],
+    "size": 66
+  },
+  {
+    "name": "wiki.Risikomanagement",
+    "imports": [
+      "wiki.Gefahr",
+      "wiki.Verfügbarkeit",
+      "wiki.Sicherheit",
+      "wiki.Software",
+      "wiki.Softwaretechnik",
+      "wiki.Analyse"
+    ],
+    "size": 103
+  },
+  {
+    "name": "wiki.Zertifizierung",
+    "imports": [
+      "wiki.Normung",
+      "wiki.Software",
+      "wiki.BSI"
+    ],
+    "size": 65
+  },
+  {
+    "name": "wiki.Qualitätsmanagement",
+    "imports": [
+      "wiki.Normung",
+      "wiki.Qualitätsmanagementnorm",
+      "wiki.Audit"
+    ],
+    "size": 88
+  },
+  {
+    "name": "wiki.Qualitätsmanagementnorm",
+    "imports": [
+      "wiki.Qualitätsmanagement",
+      "wiki.Risikomanagement",
+      "wiki.Audit",
+      "wiki.Zertifizierung"
+    ],
+    "size": 60
+  },
+  {
+    "name": "wiki.Orange Book",
+    "imports": [
+      "wiki.Zertifizierung",
+      "wiki.ITSEC",
+      "wiki.Common Criteria",
+      "wiki.Zugriffsrecht",
+      "wiki.Schnittstelle"
+    ],
+    "size": 28
+  },
+  {
+    "name": "wiki.ITSEC",
+    "imports": [
+      "wiki.Zertifizierung",
+      "wiki.Software",
+      "wiki.Computer",
+      "wiki.Orange Book",
+      "wiki.Common Criteria",
+      "wiki.BSI",
+      "wiki.Verfügbarkeit",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Rechnernetz",
+      "wiki.Verschlüsselung",
+      "wiki.Programmfehler"
+    ],
+    "size": 54
+  },
+  {
+    "name": "wiki.Common Criteria",
+    "imports": [
+      "wiki.Zertifizierung",
+      "wiki.Datenschutz",
+      "wiki.BSI",
+      "wiki.IT-Sicherheitsverfahren",
+      "wiki.Kryptographie",
+      "wiki.Schnittstelle",
+      "wiki.Firewall",
+      "wiki.ITSEC",
+      "wiki.Orange Book"
+    ],
+    "size": 48
+  },
+  {
+    "name": "wiki.BSI",
+    "imports": [
+      "wiki.Netzwerksicherheit",
+      "wiki.Zertifizierung",
+      "wiki.IT-Grundschutz-Kataloge",
+      "wiki.Datenschutz",
+      "wiki.Common Criteria",
+      "wiki.Open Source",
+      "wiki.Elektronische Signatur"
+    ],
+    "size": 62
+  },
+  {
+    "name": "wiki.IT-Grundschutz-Kataloge",
+    "imports": [
+      "wiki.BSI",
+      "wiki.Zertifizierung",
+      "wiki.Vertraulichkeit",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Verfügbarkeit",
+      "wiki.Server",
+      "wiki.Netzwerk",
+      "wiki.Software",
+      "wiki.E-Mail"
+    ],
+    "size": 24
+  },
+  {
+    "name": "wiki.IT Infrastructure Library",
+    "imports": [
+      "wiki.Zertifizierung",
+      "wiki.Audit",
+      "wiki.Certified Information Systems Auditor"
+    ],
+    "size": 49
+  },
+  {
+    "name": "wiki.COBIT",
+    "imports": [
+      "wiki.ISACA",
+      "wiki.IT-Grundschutz-Kataloge",
+      "wiki.Certified Information Systems Auditor",
+      "wiki.Certified Information Security Manager"
+    ],
+    "size": 20
+  },
+  {
+    "name": "wiki.Common Criteria",
+    "imports": [
+      "wiki.Zertifizierung",
+      "wiki.Datenschutz",
+      "wiki.BSI",
+      "wiki.IT-Sicherheitsverfahren",
+      "wiki.Kryptographie",
+      "wiki.Schnittstelle",
+      "wiki.Firewall",
+      "wiki.ITSEC",
+      "wiki.Orange Book"
+    ],
+    "size": 48
+  },
+  {
+    "name": "wiki.Orange Book",
+    "imports": [
+      "wiki.Zertifizierung",
+      "wiki.ITSEC",
+      "wiki.Common Criteria",
+      "wiki.Zugriffsrecht",
+      "wiki.Schnittstelle"
+    ],
+    "size": 28
+  },
+  {
+    "name": "wiki.ITSEC",
+    "imports": [
+      "wiki.Zertifizierung",
+      "wiki.Software",
+      "wiki.Computer",
+      "wiki.Orange Book",
+      "wiki.Common Criteria",
+      "wiki.BSI",
+      "wiki.Verfügbarkeit",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Rechnernetz",
+      "wiki.Verschlüsselung",
+      "wiki.Programmfehler"
+    ],
+    "size": 54
+  },
+  {
+    "name": "wiki.Common Criteria",
+    "imports": [
+      "wiki.Zertifizierung",
+      "wiki.Datenschutz",
+      "wiki.BSI",
+      "wiki.IT-Sicherheitsverfahren",
+      "wiki.Kryptographie",
+      "wiki.Schnittstelle",
+      "wiki.Firewall",
+      "wiki.ITSEC",
+      "wiki.Orange Book"
+    ],
+    "size": 48
+  },
+  {
+    "name": "wiki.IT-Sicherheitsverfahren",
+    "imports": [
+      "wiki.Normung",
+      "wiki.Information Security Management System",
+      "wiki.Kryptographie",
+      "wiki.Datenschutz",
+      "wiki.Common Criteria"
+    ],
+    "size": 36
+  },
+  {
+    "name": "wiki.IT-Grundschutz-Kataloge",
+    "imports": [
+      "wiki.BSI",
+      "wiki.Zertifizierung",
+      "wiki.Vertraulichkeit",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Verfügbarkeit",
+      "wiki.Server",
+      "wiki.Netzwerk",
+      "wiki.Software",
+      "wiki.E-Mail"
+    ],
+    "size": 24
+  },
+  {
+    "name": "wiki.BSI",
+    "imports": [
+      "wiki.Netzwerksicherheit",
+      "wiki.Zertifizierung",
+      "wiki.IT-Grundschutz-Kataloge",
+      "wiki.Datenschutz",
+      "wiki.Common Criteria",
+      "wiki.Open Source",
+      "wiki.Elektronische Signatur"
+    ],
+    "size": 62
+  },
+  {
+    "name": "wiki.Information Security Management System",
+    "imports": [
+      "wiki.IT-Sicherheitsverfahren",
+      "wiki.BSI",
+      "wiki.Vertraulichkeit",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Verfügbarkeit",
+      "wiki.Sicherheitsrichtlinie",
+      "wiki.Sicherheitskonzept"
+    ],
+    "size": 12
+  },
+  {
+    "name": "wiki.Qualitätsmanagementnorm",
+    "imports": [
+      "wiki.Qualitätsmanagement",
+      "wiki.Risikomanagement",
+      "wiki.Audit",
+      "wiki.Zertifizierung"
+    ],
+    "size": 60
+  },
+  {
+    "name": "wiki.Zertifikat",
+    "imports": [
+      "wiki.Zertifizierung"
+    ],
+    "size": 13
+  },
+  {
+    "name": "wiki.Certified Information Security Manager",
+    "imports": [
+      "wiki.Zertifizierung",
+      "wiki.Risikomanagement",
+      "wiki.Certified Information Systems Auditor",
+      "wiki.Certified Information Systems Security Professional"
+    ],
+    "size": 8
+  },
+  {
+    "name": "wiki.Certified Information Systems Auditor",
+    "imports": [
+      "wiki.ISACA",
+      "wiki.Certified Information Security Manager"
+    ],
+    "size": 5
+  },
+  {
+    "name": "wiki.ISACA",
+    "imports": [
+      "wiki.Certified Information Systems Auditor",
+      "wiki.Certified Information Security Manager"
+    ],
+    "size": 8
+  },
+  {
+    "name": "wiki.Certified Information Systems Security Professional",
+    "imports": [
+      "wiki.Zertifizierung",
+      "wiki.Informationstechnik",
+      "wiki.Audit",
+      "wiki.Infrastruktur",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Vertraulichkeit",
+      "wiki.Zugriffskontrolle",
+      "wiki.Passwort",
+      "wiki.Persönliche Identifikationsnummer",
+      "wiki.Intrusion Detection System",
+      "wiki.Penetrationstest (Informatik)",
+      "wiki.Verfügbarkeit",
+      "wiki.Denial of Service",
+      "wiki.Datenschutz",
+      "wiki.Risikomanagement",
+      "wiki.Firewall",
+      "wiki.Computerwurm",
+      "wiki.Software",
+      "wiki.Kryptographie",
+      "wiki.Datenübertragung",
+      "wiki.Sicherheit"
+    ],
+    "size": 221
+  },
+  {
+    "name": "wiki.Software",
+    "imports": [
+      "wiki.Computerprogramm",
+      "wiki.Betriebssystem",
+      "wiki.Softwaretechnik",
+      "wiki.Schnittstelle",
+      "wiki.Softwaretest",
+      "wiki.Programmfehler",
+      "wiki.Computer",
+      "wiki.Open Source",
+      "wiki.Spyware",
+      "wiki.Personal Computer",
+      "wiki.Analyse"
+    ],
+    "size": 197
+  },
+  {
+    "name": "wiki.Electronic Banking",
+    "imports": [
+      "wiki.Internet",
+      "wiki.Persönliche Identifikationsnummer",
+      "wiki.Transaktionsnummer",
+      "wiki.Phishing",
+      "wiki.E-Mail",
+      "wiki.Verschlüsselung",
+      "wiki.HTTPS",
+      "wiki.Firewall",
+      "wiki.Computervirus",
+      "wiki.Trojaner",
+      "wiki.Pharming (Internet)",
+      "wiki.Man-in-the-middle-Angriff",
+      "wiki.Datenschutz"
+    ],
+    "size": 82
+  },
+  {
+    "name": "wiki.Internet",
+    "imports": [
+      "wiki.Rechnernetz",
+      "wiki.E-Mail",
+      "wiki.Datenaustausch",
+      "wiki.IETF",
+      "wiki.Computer",
+      "wiki.Betriebssystem",
+      "wiki.Webbrowser",
+      "wiki.Internetsurfen",
+      "wiki.Spam",
+      "wiki.Sicherheit",
+      "wiki.Datenschutz",
+      "wiki.Verschlüsselung",
+      "wiki.WLAN",
+      "wiki.Server",
+      "wiki.HTTPS",
+      "wiki.Firewall",
+      "wiki.Infrastruktur",
+      "wiki.Internetkriminalität"
+    ],
+    "size": 235
+  },
+  {
+    "name": "wiki.Infrastruktur",
+    "imports": [
+      "wiki.Internet"
+    ],
+    "size": 91
+  },
+  {
+    "name": "wiki.Server",
+    "imports": [
+      "wiki.Software",
+      "wiki.Computerprogramm",
+      "wiki.Computer",
+      "wiki.Betriebssystem",
+      "wiki.Personal Computer",
+      "wiki.Mailserver"
+    ],
+    "size": 59
+  },
+  {
+    "name": "wiki.Firewall",
+    "imports": [
+      "wiki.Rechnernetz",
+      "wiki.Sicherheitskonzept",
+      "wiki.Intrusion Detection System",
+      "wiki.Betriebssystem",
+      "wiki.Sicherheitsrichtlinie",
+      "wiki.Schadprogramm",
+      "wiki.Open Source",
+      "wiki.Personal Firewall",
+      "wiki.Computerwurm",
+      "wiki.Software",
+      "wiki.Firewall",
+      "wiki.Denial of Service"
+    ],
+    "size": 163
+  },
+  {
+    "name": "wiki.Intrusion Detection System",
+    "imports": [
+      "wiki.Rechnernetz",
+      "wiki.Firewall",
+      "wiki.Netzwerk",
+      "wiki.Betriebssystem",
+      "wiki.Denial of Service",
+      "wiki.Computer",
+      "wiki.Hacker"
+    ],
+    "size": 44
+  },
+  {
+    "name": "wiki.Hacker",
+    "imports": [
+      "wiki.Open Source",
+      "wiki.Social Engineering (Sicherheit)",
+      "wiki.Software",
+      "wiki.Cracker (Computersicherheit)",
+      "wiki.Personal Computer",
+      "wiki.Internet"
+    ],
+    "size": 153
+  },
+  {
+    "name": "wiki.Passwort",
+    "imports": [
+      "wiki.Persönliche Identifikationsnummer",
+      "wiki.Transaktionsnummer",
+      "wiki.Electronic Banking",
+      "wiki.Phishing",
+      "wiki.Technische Kompromittierung"
+    ],
+    "size": 70
+  },
+  {
+    "name": "wiki.Social Engineering (Sicherheit)",
+    "imports": [
+      "wiki.Hacker",
+      "wiki.Systemadministrator",
+      "wiki.Phishing",
+      "wiki.E-Mail",
+      "wiki.Penetrationstest (Informatik)"
+    ],
+    "size": 27
+  },
+  {
+    "name": "wiki.IT-Grundschutz-Kataloge",
+    "imports": [
+      "wiki.BSI",
+      "wiki.Zertifizierung",
+      "wiki.Vertraulichkeit",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Verfügbarkeit",
+      "wiki.Server",
+      "wiki.Netzwerk",
+      "wiki.Software",
+      "wiki.E-Mail"
+    ],
+    "size": 24
+  },
+  {
+    "name": "wiki.BSI",
+    "imports": [
+      "wiki.Netzwerksicherheit",
+      "wiki.Zertifizierung",
+      "wiki.IT-Grundschutz-Kataloge",
+      "wiki.Datenschutz",
+      "wiki.Common Criteria",
+      "wiki.Open Source",
+      "wiki.Elektronische Signatur"
+    ],
+    "size": 62
+  },
+  {
+    "name": "wiki.IT-Grundschutz-Kataloge",
+    "imports": [
+      "wiki.BSI",
+      "wiki.Zertifizierung",
+      "wiki.Vertraulichkeit",
+      "wiki.Integrität (Informationssicherheit)",
+      "wiki.Verfügbarkeit",
+      "wiki.Server",
+      "wiki.Netzwerk",
+      "wiki.Software",
+      "wiki.E-Mail"
+    ],
+    "size": 24
+  },
+  {
+    "name": "wiki.Datenveränderung",
+    "imports": [
+      "wiki.Ausspähen von Daten",
+      "wiki.Computersabotage"
+    ],
+    "size": 15
+  },
+  {
+    "name": "wiki.Computersabotage",
+    "imports": [
+      "wiki.Computer",
+      "wiki.Denial of Service",
+      "wiki.Datenveränderung"
+    ],
+    "size": 20
+  },
+  {
+    "name": "wiki.Ausspähen von Daten",
+    "imports": [
+      "wiki.Computersabotage",
+      "wiki.Datenveränderung"
+    ],
+    "size": 10
+  },
+  {
+    "name": "wiki.Computerbetrug",
+    "imports": [
+      "wiki.Computer",
+      "wiki.Computerprogramm"
+    ],
+    "size": 10
+  },
+  {
+    "name": "wiki.Schadprogramm",
+    "imports": [
+      "wiki.Software",
+      "wiki.Computerprogramm",
+      "wiki.Programmfehler",
+      "wiki.Computervirus",
+      "wiki.Technische Kompromittierung",
+      "wiki.Sicherheitssoftware",
+      "wiki.Firewall",
+      "wiki.Antivirenprogramm",
+      "wiki.Computer",
+      "wiki.Computerwurm",
+      "wiki.Rechnernetz",
+      "wiki.Internet",
+      "wiki.Trojaner",
+      "wiki.Spyware",
+      "wiki.Backdoor",
+      "wiki.Denial of Service",
+      "wiki.E-Mail",
+      "wiki.Open Source",
+      "wiki.Botnet",
+      "wiki.Pharming (Internet)",
+      "wiki.Phishing",
+      "wiki.Spam",
+      "wiki.Vishing"
+    ],
+    "size": 63
+  },
+  {
+    "name": "wiki.Internetkriminalität",
+    "imports": [
+      "wiki.Internet",
+      "wiki.Computer",
+      "wiki.Ausspähen von Daten",
+      "wiki.Computervirus",
+      "wiki.Persönliche Identifikationsnummer",
+      "wiki.Hacker",
+      "wiki.Datenveränderung",
+      "wiki.Computersabotage",
+      "wiki.Phishing",
+      "wiki.Datenschutz",
+      "wiki.BSI",
+      "wiki.Botnet",
+      "wiki.Trojaner",
+      "wiki.ENISA"
+    ],
+    "size": 84
+  },
+  {
+    "name": "wiki.Cyberkrieg",
+    "imports": [
+      "wiki.Denial of Service",
+      "wiki.Spionage",
+      "wiki.Social Engineering (Sicherheit)",
+      "wiki.Sabotage",
+      "wiki.Hacker",
+      "wiki.Internetkriminalität",
+      "wiki.Botnet"
+    ],
+    "size": 204
+  },
+  {
+    "name": "wiki.ENISA",
+    "imports": [
+      "wiki.Risiko",
+      "wiki.Normung",
+      "wiki.Risikomanagement",
+      "wiki.BSI"
+    ],
+    "size": 101
+  },
+  {
+    "name": "wiki.IT-Sicherheitsverfahren",
+    "imports": [
+      "wiki.Normung",
+      "wiki.Information Security Management System",
+      "wiki.Kryptographie",
+      "wiki.Datenschutz",
+      "wiki.Common Criteria"
+    ],
+    "size": 36
+  },
+  {
+    "name": "wiki.Sicherheitspaket",
+    "imports": [
+      "wiki.Software",
+      "wiki.Schadprogramm",
+      "wiki.Netzwerksicherheit",
+      "wiki.Antivirenprogramm",
+      "wiki.Personal Firewall",
+      "wiki.Phishing",
+      "wiki.Spyware",
+      "wiki.WLAN",
+      "wiki.Betriebssystem",
+      "wiki.Systemadministrator"
+    ],
+    "size": 28
+  },
+  {
+    "name": "wiki.BSI",
+    "imports": [
+      "wiki.Netzwerksicherheit",
+      "wiki.Zertifizierung",
+      "wiki.IT-Grundschutz-Kataloge",
+      "wiki.Datenschutz",
+      "wiki.Common Criteria",
+      "wiki.Open Source",
+      "wiki.Elektronische Signatur"
+    ],
+    "size": 62
+  },
+  {
+    "name": "wiki.ENISA",
+    "imports": [
+      "wiki.Risiko",
+      "wiki.Normung",
+      "wiki.Risikomanagement",
+      "wiki.BSI"
+    ],
+    "size": 101
+  },
+  {
+    "name": "wiki.IETF",
+    "imports": [
+      "wiki.Internet"
+    ],
+    "size": 29
+  },
+  {
+    "name": "wiki.ENISA",
+    "imports": [
+      "wiki.Risiko",
+      "wiki.Normung",
+      "wiki.Risikomanagement",
+      "wiki.BSI"
+    ],
+    "size": 101
+  },
+  {
+    "name": "wiki.ENISA",
+    "imports": [
+      "wiki.Risiko",
+      "wiki.Normung",
+      "wiki.Risikomanagement",
+      "wiki.BSI"
+    ],
+    "size": 101
+  }
+]
