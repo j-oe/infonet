@@ -34,15 +34,15 @@ var extractNodes = function(node, level){
       if (title && link.indexOf(":") === -1) {
 
         // build node name and remove dots
-        _nodeName = "wiki." + node.toString().split('.').join('');
-        _importsItem = "wiki." + title.split('.').join('');
+        _nodeName = "wiki." + node.toString().split('.').join('').split('(')[0].split(" ").join("_");
+        _importsItem = "wiki." + title.split('.').join('').split('(')[0].split(" ").join("_");
 
         // handle import nodes dependend on level
         if (level === 1){
           _importsList.push(_importsItem);
         }else{
           // test for common nodes with root node and duplicates. then push to imports list
-          if(!(nodes[0].imports.indexOf(_importsItem) === -1) && _importsList.indexOf(_importsItem) === -1){
+          if(!(nodes[0].imports.indexOf(_importsItem) === -1) && _importsList.indexOf(_importsItem) === -1 && !(_importsItem === _nodeName)){
             _importsList.push(_importsItem);
           }
          
