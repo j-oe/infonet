@@ -1,41 +1,67 @@
-// copy/paste into web developer console on any wikipedia article
-
-// global array of all objects
 var nodes = [];
 
-// get root node from page heading
-var rootNode = $("#firstHeading span").text();
+var filterLinks = function (links) {
+  var cleanLinks = [];
+  for (var link in links){
+    if (links[link].ns === 0){
+      cleanLinks.push(links[link]["*"]);
+    }
+  }
+  return cleanLinks;
+}
 
-// set ajax requests to sync
-$.ajaxSetup({async:false});
- 
-// get all nodes of article
-var extractNodes = function(node, level){  
+var getArticles = function (context) {
+  _result = "";
+  $.ajax({
+    async: false,
+    type: "GET",
+    url: 'http://de.wikipedia.org/w/api.php',
+    data: {
+      page: context,
+      action: 'parse',
+      format: 'json',
+      prop: 'links'
+    },
+    dataType: "jsonp",
+    success: function(data){
+      links = data.parse.links;
+      links = filterLinks(links);
+      _result = links;
+    }
+  });
+  return _result;
+}
 
-  // create temp lists for later use
+var extractNodes = function (node, level) {  
+
+  _articles = [];
   _nodeList = [];
   _importsList = [];
 
   // loop over given array
     for(var i in node){
       
-    if(node[i]){
-      console.log("creating node on level 2: " + node[i]);
+      //if(node[i]){
       // replace content on page with new content from target node
-      $("#mw-content-text").load(node[i].split(' ').join('_')+" #mw-content-text");
-    }
+        if (node[i]){
+        _articles = getArticles(node[i].split(' ').join('_'));
+      }
+        //console.log(_articles);
+        //$("#mw-content-text").load(node[i].split(' ').join('_')+" #mw-content-text");
+      //}
     
     // extract all article links from new content
-    $("#mw-content-text a[href^='/wiki']").each(function(){
-      title = $(this).attr("title");
-      link = $(this).attr("href");
+    $(_articles).each(function(){
+      // title = $(this).attr("title");
+      // link = $(this).attr("href");
 
       // filter out internal wikipedia links
-      if (title && link.indexOf(":") === -1) {
+      // if (title && link.indexOf(":") === -1) {
 
         // build node name and remove dots
         _nodeName = "wiki." + node.toString().split('.').join('').split('(')[0].split(" ").join("_");
-        _importsItem = "wiki." + title.split('.').join('').split('(')[0].split(" ").join("_");
+        console.log(_nodeName);
+        _importsItem = "wiki." + this.split('.').join('').split('(')[0].split(" ").join("_");
 
         // handle import nodes dependend on level
         if (level === 1){
@@ -53,9 +79,9 @@ var extractNodes = function(node, level){
         _nodeName = {name: _nodeName};
 
         // push title of node to temp list
-        _nodeList.push(title);
+        _nodeList.push(this);
 
-      }
+      // }
     }); 
 
     // create "nodes" property of object and push temp list to it
@@ -73,43 +99,46 @@ var extractNodes = function(node, level){
   };
 }
 
-// start
-console.log("creating node on level 1: " + rootNode)
-var startTime = new Date().getTime();
-
+////////////// START //////////////////////////
 // start with root node on level 1
-extractNodes([rootNode], 1);
 
-// loop over level 2
-for(var i in nodes[0]._nodes){
-  _tempNode = nodes[0]._nodes[i];
-  extractNodes([_tempNode], 2);
+var crawl = function (start) {
+
+  startTime = new Date().getTime();
+
+  extractNodes([start], 1);
+
+  // loop over level 2
+  for(var i in nodes[0]._nodes){
+    _tempNode = nodes[0]._nodes[i];
+    extractNodes([_tempNode], 2);
+  }
+
+  // clean Data for visualization
+  console.log("cleaning data");
+  // delete internal processing nodes
+  for (var k in nodes){
+      delete nodes[k]._nodes;
+  }
+  // send root node to nirvana
+  nirvana = nodes.splice(0,1);
+
+  // show results as JSON-String
+  //$("#firstHeading span").text("Result");
+  nodeData = JSON.stringify(nodes, null, '\t');
+  //$("#mw-content-text").html("<textarea rows='100'>" + nodeData + "</textarea>");
+   
+  // statistics  
+  endTime = new Date().getTime();
+  totalNodes = 0;
+
+  for(var i in nodes){
+    totalNodes = totalNodes + nodes[i].size;
+  }
+
+  console.log("process finished in",(endTime - startTime)/1000,"seconds.");
+  console.log("analyzed a total of",totalNodes,"nodes.");  
 }
 
-// clean Data for visualization
-console.log("cleaning data");
-// delete internal processing nodes
-for (var k in nodes){
-    delete nodes[k]._nodes;
-}
-// send root node to nirvana
-var nirvana = nodes.splice(0,1);
 
-// show results as JSON-String
-$("#firstHeading span").text("Result");
-nodeData = JSON.stringify(nodes, null, '\t');
-$("#mw-content-text").html("<textarea rows='100'>" + nodeData + "</textarea>");
- 
-// statistics  
-var endTime = new Date().getTime();
-var totalNodes = 0;
-
-for(var i in nodes){
-  totalNodes = totalNodes + nodes[i].size;
-}
-
-//console.log(nodeData);
-//console.log(nodes);
-
-console.log("process finished in",(endTime - startTime)/1000,"seconds.");
-console.log("analyzed a total of",totalNodes,"nodes.");
+crawl("Informationssicherheit");
