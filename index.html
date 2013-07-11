@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>infoVis - Wikpedia Data Visualiser - SKA / Fraunhofer IOSB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"></head>
+<body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="ui.js"></script>
+  <div class="navbar" style="display:none;">
+    <div class="navbar-inner">
+      <a class="brand" href="#">infoVis</a>
+      <form class="navbar-form pull-left">
+        <input type="text" class="span5 typeahead" id="userinput">
+        <div class="btn-group">
+          <button class="btn btn-info" id="go">Start</button>
+          <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#" class="presetNode">Informationssicherheit</a>
+            </li>
+            <li>
+              <a href="#" class="presetNode">Datenschutz</a>
+            </li>
+            <li>
+              <a href="#" class="presetNode">Privacy by Design</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">Zufällig</a>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="hero-unit" style="margin-top: -20px; background: url(bg.png); background-size: cover; background-position: bottom;">
+    <h1>infoVis</h1>
+    <p class="lead">
+      Themenkomplexe interaktiv visualisieren
+    </p>
+    <a class="btn btn-large btn-success" href="#" id="start">Starten</a>
+  </div>
+  <div class="row">
+    <div class="span7 offset1">dsada</div>
+    <div class="span1 offset2">dsada</div>
+  </div>
+</body>
+</html>
